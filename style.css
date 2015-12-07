@@ -3,7 +3,7 @@ body {
 }
 
 header{
-    min-height:2500px;
+    min-height:1600px;
     background: url(images/image2.jpg) center 0 no-repeat fixed;
     padding-bottom:20px;
     padding-top:50px;
@@ -32,13 +32,19 @@ nav li{
 }
 
 .transparent{
-    background-color:#c181db;
+    background-color:#b572d0;
     opacity:0.5;
     min-height:30px;
 }
 
 .actions{
-    background-color:#c181db;
+    background-color:#b572d0;
+    color:white;
+}
+
+.actions_description{
+    width:800px;
+    margin:auto;
 }
 
 .scroll{
@@ -49,4 +55,24 @@ nav li{
 }
 
 .scroll img{
+}
+
+.transparent_rouge{
+}
+
+.donate{
+    text-align:center;
+    margin-top:30px;
+}
+
+.gauche{
+    background-color:#000;
+}
+
+.droite{
+    background-color:#b572d0;
+}
+
+.un{
+
 }
