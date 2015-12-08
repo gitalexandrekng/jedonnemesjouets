@@ -34,6 +34,8 @@ header h2{
 .actions{
     background-color:#5bc0de;
     color:white;
+    padding:15px;
+    text-align:justify;
 }
 
 .actions_description{
@@ -79,12 +81,32 @@ header h2{
 }
 
 .temoignage{
-    background: url(images/image4.jpg) center 0 no-repeat fixed;
+    background: url(images/image1.jpg) center 0 no-repeat fixed;
     min-height:500px;
+    color:#FFF;
+}
+
+.temoignage h1{
+    text-align:center;
+}
+
+.temoignage_fond{
+    background-color:#000;
+    padding:15px;
 }
 
 .un{
     margin-bottom:70px;
+}
+
+.un h1{
+    color:#5bc0de;
+    font-variant:small-caps;
+}
+
+.deux h1{
+    color:#5bc0de;
+    font-variant:small-caps;
 }
 
 body.navbar-more-show  {
@@ -180,4 +202,9 @@ body.navbar-more-show  {
 	.navbar-nav.mobile-bar > li > a > span.menu-icon {
 		display: none;
 	}
+}
+
+.pagination{
+    border:1px solid black;
+    border-radius:0px;
 }
