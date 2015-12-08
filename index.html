@@ -9,25 +9,35 @@
     </head>
     <body>
 
+<!-- SCRIPT FACEBOOK -->
+
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+        (
+            function(d, s, id)
+            {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk')
+        );
+        </script>
+
+<!-- HEADER -->
 
         <header class="container-fluid">
             <div class="row">
                 <div class="col-xl-12 logo">
                     <img src="images/logo.png"><br>
                     <h2>La communauté d'entraide dédiée aux dons pour les enfants</h2>
-                    <a href="#" class="btn btn-lg btn-info">Faire un don</a>
+                    <a href="#" class="btn btn-lg btn-info" data-toggle="modal" data-target="#perso">Mon espace personnel</a>
                 </div>
             </div>
 
-            <!-- NAV -->
+<!-- NAV -->
+
             <nav class="navbar navbar-inverse navbar-fixed-top animate">
         		<div class="container navbar-more visible-xs">
         			<ul class="nav navbar-nav">
@@ -121,7 +131,6 @@
         			<div class="navbar-header hidden-xs">
         				<a class="navbar-brand" href="#">Je donne mes jouets</a>
         			</div>
-
         			<ul class="nav navbar-nav navbar-right mobile-bar">
         				<li>
         					<a href="#">
@@ -150,10 +159,15 @@
         			</ul>
         		</div>
 	        </nav>
-            <div class="row scroll"><!--
+
+<!-- SCROLL -->
+
+            <div class="row scroll">
                 <p>SCROLL</p>
-                <img src="images/scroll.png">-->
+                <img src="images/scroll.png">
             </div>
+
+<!-- DESCRIPTION DU SITE -->
 
             <div class="row transparent"></div>
             <div class="row actions">
@@ -168,6 +182,9 @@
                 </div>
             </div>
             <div class="row transparent"></div>
+
+<!-- BOUTONS POUR LES DONS -->
+
             <div class="row">
                 <div class="col-sm-offset-1 col-sm-5">
                     <div class="transparent_rouge">
@@ -190,38 +207,80 @@
                     <article class="un">
                         <h1>Nouvelles demandes de jouet</h1>
                         <div id="content" class="row">
-                                <div class="col-lg-12">
-                                    <h3>Recherche dons de jouets peluche et autre pour kermesse</h3>
+                            <div class="col-lg-12">
+                                <h3>Recherche dons de jouets peluche et autre pour kermesse</h3>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat augue leo, eget lobortis ipsum lobortis vitae. Mauris lorem neque, rhoncus scelerisque risus sed, blandit faucibus tortor. Nullam et venenatis tellus, eget interdum neque. Donec at libero ante. Praesent ullamcorper efficitur arcu, sit amet hendrerit tortor aliquet pulvinar. Proin rhoncus, quam vitae eleifend vehicula, libero lorem viverra nibh, vitae rutrum neque nulla vitae felis. Fusce pretium, est quis malesuada mollis, urna elit faucibus ipsum, et convallis nisl nibh non justo. Nam congue facilisis venenatis. Vivamus tortor diam, egestas quis tellus eget, porttitor scelerisque ante. Cras sagittis nibh nisi, vel iaculis velit sagittis ac. Maecenas lobortis, ligula a ultricies porttitor, nisi elit vestibulum purus, in posuere nulla mi quis erat. Nullam ut lectus placerat, ultricies ante eget, posuere mi. Mauris tempus posuere pretium.
-                                </div>
-                                <div class="col-lg-12">
-                                    <h3>Article 2</h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat augue leo, eget lobortis ipsum lobortis vitae. Mauris lorem neque, rhoncus scelerisque risus sed, blandit faucibus tortor. Nullam et venenatis tellus, eget interdum neque. Donec at libero ante. Praesent ullamcorper efficitur arcu, sit amet hendrerit tortor aliquet pulvinar. Proin rhoncus, quam vitae eleifend vehicula, libero lorem viverra nibh, vitae rutrum neque nulla vitae felis. Fusce pretium, est quis malesuada mollis, urna elit faucibus ipsum, et convallis nisl nibh non justo. Nam congue facilisis venenatis. Vivamus tortor diam, egestas quis tellus eget, porttitor scelerisque ante. Cras sagittis nibh nisi, vel iaculis velit sagittis ac. Maecenas lobortis, ligula a ultricies porttitor, nisi elit vestibulum purus, in posuere nulla mi quis erat. Nullam ut lectus placerat, ultricies ante eget, posuere mi. Mauris tempus posuere pretium.
-                                </div>
-                                <div class="col-lg-12">
-                                    <h3>Article 3</h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat augue leo, eget lobortis ipsum lobortis vitae. Mauris lorem neque, rhoncus scelerisque risus sed, blandit faucibus tortor. Nullam et venenatis tellus, eget interdum neque. Donec at libero ante. Praesent ullamcorper efficitur arcu, sit amet hendrerit tortor aliquet pulvinar. Proin rhoncus, quam vitae eleifend vehicula, libero lorem viverra nibh, vitae rutrum neque nulla vitae felis. Fusce pretium, est quis malesuada mollis, urna elit faucibus ipsum, et convallis nisl nibh non justo. Nam congue facilisis venenatis. Vivamus tortor diam, egestas quis tellus eget, porttitor scelerisque ante. Cras sagittis nibh nisi, vel iaculis velit sagittis ac. Maecenas lobortis, ligula a ultricies porttitor, nisi elit vestibulum purus, in posuere nulla mi quis erat. Nullam ut lectus placerat, ultricies ante eget, posuere mi. Mauris tempus posuere pretium.
-                                </div>
                             </div>
-                            <div class="text-center" id="page_navigation"></div>
+                            <div class="col-lg-12">
+                                <h3>Article 2</h3>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat augue leo, eget lobortis ipsum lobortis vitae. Mauris lorem neque, rhoncus scelerisque risus sed, blandit faucibus tortor. Nullam et venenatis tellus, eget interdum neque. Donec at libero ante. Praesent ullamcorper efficitur arcu, sit amet hendrerit tortor aliquet pulvinar. Proin rhoncus, quam vitae eleifend vehicula, libero lorem viverra nibh, vitae rutrum neque nulla vitae felis. Fusce pretium, est quis malesuada mollis, urna elit faucibus ipsum, et convallis nisl nibh non justo. Nam congue facilisis venenatis. Vivamus tortor diam, egestas quis tellus eget, porttitor scelerisque ante. Cras sagittis nibh nisi, vel iaculis velit sagittis ac. Maecenas lobortis, ligula a ultricies porttitor, nisi elit vestibulum purus, in posuere nulla mi quis erat. Nullam ut lectus placerat, ultricies ante eget, posuere mi. Mauris tempus posuere pretium.
+                            </div>
+                            <div class="col-lg-12">
+                                <h3>Article 3</h3>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat augue leo, eget lobortis ipsum lobortis vitae. Mauris lorem neque, rhoncus scelerisque risus sed, blandit faucibus tortor. Nullam et venenatis tellus, eget interdum neque. Donec at libero ante. Praesent ullamcorper efficitur arcu, sit amet hendrerit tortor aliquet pulvinar. Proin rhoncus, quam vitae eleifend vehicula, libero lorem viverra nibh, vitae rutrum neque nulla vitae felis. Fusce pretium, est quis malesuada mollis, urna elit faucibus ipsum, et convallis nisl nibh non justo. Nam congue facilisis venenatis. Vivamus tortor diam, egestas quis tellus eget, porttitor scelerisque ante. Cras sagittis nibh nisi, vel iaculis velit sagittis ac. Maecenas lobortis, ligula a ultricies porttitor, nisi elit vestibulum purus, in posuere nulla mi quis erat. Nullam ut lectus placerat, ultricies ante eget, posuere mi. Mauris tempus posuere pretium.
+                            </div>
+                        </div>
+                        <div class="text-center" id="page_navigation"></div>
                     </article>
                     <article class="deux">
                         <h1>Nouveaux jouets à offrir</h1>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat augue leo, eget lobortis ipsum lobortis vitae. Mauris lorem neque, rhoncus scelerisque risus sed, blandit faucibus tortor. Nullam et venenatis tellus, eget interdum neque. Donec at libero ante. Praesent ullamcorper efficitur arcu, sit amet hendrerit tortor aliquet pulvinar. Proin rhoncus, quam vitae eleifend vehicula, libero lorem viverra nibh, vitae rutrum neque nulla vitae felis. Fusce pretium, est quis malesuada mollis, urna elit faucibus ipsum, et convallis nisl nibh non justo. Nam congue facilisis venenatis. Vivamus tortor diam, egestas quis tellus eget, porttitor scelerisque ante. Cras sagittis nibh nisi, vel iaculis velit sagittis ac. Maecenas lobortis, ligula a ultricies porttitor, nisi elit vestibulum purus, in posuere nulla mi quis erat. Nullam ut lectus placerat, ultricies ante eget, posuere mi. Mauris tempus posuere pretium.
                     </article>
                 </section>
+
+<!-- ASIDE -->
+
                 <aside class="col-md-6">
+
+                    <!-- ASIDE 1 -->
+
                     <div class="row droite">
                         <img src="images/social.png"><h1>Rejoignez-nous</h1>
                         <div class="fb-page" data-href="https://www.facebook.com/Association-Je-donne-mes-jouets-118967621493953/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                     </div>
+
+                    <!-- ASIDE 2 -->
+
                     <div class="row droite">
                         <h1>Newsletter</h1>
                         <p>Salut</p>
                     </div>
+
+                    <!-- ASIDE 3 -->
+
                     <div class="row droite">
                         <h1>Les dons et les demandes par région</h1>
+                        <div class="map">
+							<img src="images/void.png" width="300px" height="274px" border="0" usemap="#Map"/>
+							<map name="Map">
+								  <area shape="poly" coords="232,97,234,83,236,69,232,65,233,62,243,59,252,64,244,101,239,107,232,98" href="#">
+								  <area shape="poly" coords="231,95,210,94,205,83,194,73,199,45,240,57,230,65,236,70,231,95" href="#">
+								  <area shape="poly" coords="203,103,212,95,232,95,236,106,216,140,203,137,202,103" href="#">
+								  <area shape="poly" coords="210,95,202,103,191,92,176,95,166,83,166,69,171,55,181,38,190,34,191,41,200,45,194,73,211,95" href="#">
+								  <area shape="poly" coords="165,67,135,59,133,41,128,35,134,27,154,35,170,35,182,37,172,55,164,68" href="#">
+								  <area shape="poly" coords="133,26,133,11,150,6,154,16,159,15,172,26,179,28,179,36,157,35,133,26" href="#">
+								  <area shape="poly" coords="135,60,164,68,167,74,164,81,160,83,156,89,148,89,148,84,140,83,132,71,130,65,135,60" href="#">
+								  <area shape="poly" coords="127,37,134,43,134,60,128,68,118,72,111,67,108,51,106,51,106,43,118,39,127,36" href="#">
+								  <area shape="poly" coords="107,52,110,67,116,73,120,79,116,85,108,79,103,81,99,77,75,77,71,56,68,44,79,43,80,51,107,53" href="#">
+								  <area shape="poly" coords="81,78,81,93,74,97,56,104,32,93,20,92,15,85,13,69,34,65,46,65,51,71,72,73,82,79" href="#">
+								  <area shape="poly" coords="53,105,81,93,82,77,116,86,114,98,106,104,102,117,86,121,89,138,70,135,64,132,52,105" href="#">
+								  <area shape="poly" coords="116,73,130,68,139,83,148,85,148,88,158,89,160,92,156,102,159,126,152,129,144,137,122,137,114,122,105,118,106,106,117,97,118,82,118,73" href="#">
+								  <area shape="poly" coords="157,89,165,81,177,95,192,94,202,105,204,135,196,134,193,143,184,140,180,143,176,143,176,137,169,129,159,127,156,103,160,94,157,89" href="#">
+								  <area shape="poly" coords="214,141,223,138,228,135,241,165,223,174,210,189,212,197,207,200,197,195,180,197,173,184,186,170,184,165,176,165,171,155,175,143,190,143,196,137,199,135,216,141" href="#">
+								  <area shape="poly" coords="145,137,157,127,171,133,175,137,173,155,177,165,184,167,185,173,174,182,165,179,159,184,154,180,150,184,142,189,140,177,148,166,148,156,149,148,145,138" href="#">
+								  <area shape="poly" coords="121,139,142,139,149,151,148,157,148,166,141,177,126,177,124,168,120,159,112,157,120,139" href="#">
+								  <area shape="poly" coords="90,138,87,123,104,117,108,123,114,123,122,136,116,143,112,156,98,173,91,173,76,157,70,138,89,139,89,123" href="#">
+								  <area shape="poly" coords="76,160,92,173,98,173,113,156,120,161,126,177,118,193,116,201,93,206,93,215,97,219,91,239,75,231,62,221,76,162" href="#">
+								  <area shape="poly" coords="92,238,97,221,94,215,94,207,116,200,128,178,140,178,143,189,152,181,165,205,152,219,134,222,139,243,132,247,120,241,92,237" href="#">
+								  <area shape="poly" coords="134,249,140,242,135,224,149,222,165,206,157,188,162,180,174,182,180,196,190,197,194,205,184,220,176,217,158,231,158,249,146,253,134,249" href="#">
+								  <area shape="poly" coords="186,221,194,205,192,197,199,196,209,202,212,196,211,190,224,174,229,172,238,181,235,189,238,195,252,197,249,208,231,226,226,232,200,222,186,220" href="#">
+								  <area shape="poly" coords="288,226,293,252,291,269,283,271,277,265,272,251,271,239,288,228" href="#">
+							</map>
+						</div>
                     </div>
+
+                    <!-- ASIDE 4 -->
+
                     <div class="row droite">
                         <h1>Bienvenue à</h1>
                         <ul>
@@ -235,6 +294,8 @@
                 </aside>
             </div>
         </div>
+
+<!-- TEMOIGNAGE -->
 
         <div class="container-fluid">
             <div class="row temoignage">
@@ -257,9 +318,103 @@
             </div>
         </div>
 
-<!-- JAVASCRIPT PARALLAXE -->
+<!-- FENETRE -->
+<div class="modal fade" id="perso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img id="img_logo" src="images/logo.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Taper votre mot de passe et username.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Se souvenir
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-info btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Mot de passe oublié?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">S'enregistrer</button>
+                            </div>
+				        </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Register Form -->
+
+                </div>
+                <!-- End # DIV Form -->
+
+			</div>
+		</div>
+	</div>
+    <!-- END # MODAL LOGIN -->
+
+<!-- JAVASCRIPT FENETRE -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
 
   var show_per_page = 1;
@@ -308,6 +463,9 @@
   });
 
 </script>
+
+<!-- JAVASCRIPT PARALLAXE -->
+
 <script type="text/javascript" src="script/jquery.parallax-1.1.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -329,5 +487,96 @@ $(document).ready(function(){
     });
 });
 </script>
+
+<!-- JAVASCRIPT FENETRE -->
+<script type="text/javascript">
+$(function() {
+
+    var $formLogin = $('#login-form');
+    var $formLost = $('#lost-form');
+    var $formRegister = $('#register-form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+
+    $("form").submit(function () {
+        switch(this.id) {
+            case "login-form":
+                var $lg_username=$('#login_username').val();
+                var $lg_password=$('#login_password').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                }
+                return false;
+                break;
+            case "lost-form":
+                var $ls_email=$('#lost_email').val();
+                if ($ls_email == "ERROR") {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                } else {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                }
+                return false;
+                break;
+            case "register-form":
+                var $rg_username=$('#register_username').val();
+                var $rg_email=$('#register_email').val();
+                var $rg_password=$('#register_password').val();
+                if ($rg_username == "ERROR") {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                } else {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                }
+                return false;
+                break;
+            default:
+                return false;
+        }
+        return false;
+    });
+
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
+    }
+
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+  		}, $msgShowTime);
+    }
+});
+</script>
+
     </body>
 </html>
