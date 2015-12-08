@@ -2,9 +2,13 @@ body {
 
 }
 
+*{
+    font-family: 'Droid Sans', sans-serif;
+}
+
 header{
-    min-height:1600px;
-    background: url(images/image2.jpg) center 0 no-repeat fixed;
+
+    background: url(images/image1.jpg) center 0 no-repeat fixed;
     padding-bottom:20px;
     padding-top:50px;
 }
@@ -32,13 +36,13 @@ nav li{
 }
 
 .transparent{
-    background-color:#b572d0;
+    background-color:#5bc0de;
     opacity:0.5;
     min-height:30px;
 }
 
 .actions{
-    background-color:#b572d0;
+    background-color:#5bc0de;
     color:white;
 }
 
@@ -48,8 +52,8 @@ nav li{
 }
 
 .scroll{
-    padding-top:200px;
-    padding-bottom:100px;
+    padding-top:80px;
+    padding-bottom:80px;
     text-align:center;
     color:#FFF;
 }
@@ -67,12 +71,28 @@ nav li{
 
 .gauche{
     background-color:#000;
+    color:#FFF;
+    padding:15px;
 }
 
 .droite{
-    background-color:#b572d0;
+    background-color:#5bc0de;
+    padding:15px;
+    margin:10px;
+}
+
+.droite h1{
+    color:white;
+    margin:0px;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.temoignage{
+    background: url(images/image4.jpg) center 0 no-repeat fixed;
+    min-height:500px;
 }
 
 .un{
-
+    margin-bottom:40px;
 }
