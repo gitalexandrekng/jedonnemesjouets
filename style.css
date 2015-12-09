@@ -108,6 +108,23 @@ header h2{
     font-size:20px;
 }
 
+.partenaire{
+    color:white;
+    text-align:center;
+}
+
+.partenaire h1{
+    font-size:20px;
+    text-align:center;
+}
+
+.partenaire img{
+    width:50px;
+    height:50px;
+    display:inline-block;
+    margin:10px;
+}
+
 .scroll{
     padding-top:80px;
     padding-bottom:80px;
@@ -115,15 +132,37 @@ header h2{
     color:#FFF;
 }
 
-.scroll img{
-}
-
-.transparent_rouge{
-}
-
 .donate{
     text-align:center;
     margin-top:30px;
+}
+
+.login-page{
+    margin-top:20px;
+    padding:20px;
+    background-color:#5bc0de;
+}
+
+.login-page h1{
+    margin:0px;
+    margin-bottom:10px;
+
+}
+
+.recherche{
+    padding:20px;
+    background-color:#5bc0de;
+}
+
+.recherche h1{
+    margin:0px;
+    margin-bottom:20px;
+}
+
+.reseaux_sociaux img{
+    width:30px;
+    height:30px;
+    display:inline-block;
 }
 
 .gauche{
@@ -219,6 +258,19 @@ header h2{
     display:inline-block;
     vertical-align:top;
     width:47%;
+}
+
+.unique-gauche-page{
+    display:inline-block;
+    vertical-align:top;
+    width:80%;
+}
+
+.unique-droite-page{
+    text-align:right;
+    display:inline-block;
+    vertical-align:top;
+    width:17%;
 }
 
 .deux h1{

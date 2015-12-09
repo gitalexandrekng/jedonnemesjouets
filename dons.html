@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Je donne mes jouets - Refonte par KONG Alexandre</title>
+    </head>
+    <body>
+
+<!-- SCRIPT FACEBOOK -->
+
+        <div id="fb-root"></div>
+        <script>
+        (
+            function(d, s, id)
+            {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk')
+        );
+        </script>
+
+<!-- HEADER -->
+
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 logo">
+                    <img src="images/logo.png">
+                    <div class="slogan">
+                    <h2>La communauté d'entraide dédiée aux dons pour les enfants</h2>
+                    <a href="#" class="btn btn-lg btn-info" data-toggle="modal" data-target="#perso">Alerte dons de jouets</a>
+                    </div>
+                </div>
+            </div>
+
+<!-- NAV -->
+
+            <nav class="navbar navbar-inverse navbar-fixed-top animate">
+        		<div class="container navbar-more visible-xs">
+        			<ul class="nav navbar-nav">
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-picture-o"></span>
+        						Photos
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-bell-o"></span>
+        						Reservations
+        					</a>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="container">
+        			<div class="navbar-header hidden-xs">
+        				<a class="navbar-brand" href="#">Je donne mes jouets</a>
+        			</div>
+        			<ul class="nav navbar-nav navbar-right mobile-bar">
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-home"></span>
+        						Les dons
+        					</a>
+        				</li>
+        				<li>
+        					<a href="#">
+        						<span class="menu-icon fa fa-info"></span>
+        						Les demandes
+                            </a>
+        				</li>
+        				<li>
+        					<a href="#">
+                                <span class="menu-icon fa fa-bell-o"></span>
+        						Déposer vos jouets?
+        					</a>
+        				</li>
+        				<li class="hidden-xs">
+        					<a href="#">
+                                <span class="menu-icon fa fa-ship"></span>
+        						Ils parlent de nous
+        					</a>
+        				</li>
+        			</ul>
+        		</div>
+	        </nav>
+
+<!-- SCROLL -->
+
+            <div class="row scroll">
+                <!--<p>SCROLL</p>
+                <img src="images/scroll.png">-->
+            </div>
+
+<!-- DESCRIPTION DU SITE -->
+
+            <div class="row transparent"></div>
+            <div class="row actions">
+                <div class="container">
+                    <div style="padding:10px;margin:auto;">
+                            <div class="text-center">
+                                <img src="images/summer.png">
+                            </div>
+                            <p>
+                                <center>
+                                    <h1>NE JETEZ PLUS VOS JOUETS, DONNEZ-LES !</h1>
+                                </center>
+                            </p>
+                            <p>
+                                <center>
+                                    <button class="btn btn-lg btn-success">Qui sommes nous ?</button>
+                                </center>
+                            </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="chercher">
+                                <span class="chercher_align">
+                                    <button class="btn btn-success">Trouver un jouet</button>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="donner">
+                                <span class="donner_align">
+                                    <button class="btn btn-success">Donner un jouet</button>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row transparent" style="margin-bottom:150px;"></div>
+            <div class="row transparent_noir">
+
+            </div>
+        </header>
+
+<!-- CONTENT -->
+    <div class="container-fluid" style="background-color:#000; padding-bottom:30px;">
+        <div class="container" style="background-color:#000;">
+            <div class="row" style="background-image:url(images/transparent_noir.png)">
+                <section class="gauche col-sm-12">
+                    <article class="login-page">
+                        <h1>Connexion</h1>
+                        <p>Vous n'êtes toujours pas connecté ! Pensez à vous <a href="#" data-toggle="modal" data-target="#perso">connecter</a> ou à vous <a href="#" data-toggle="modal" data-target="#perso">inscrire</a></p>
+                    </article>
+                    <article class="un">
+                        <h1>Nouveaux jouets à offrir</h1>
+                        <div id="content" class="row">
+                            <div class="col-md-4">
+                                <div class="unique">
+                                    <h3>Monopoly</h3>
+                                    <div class="unique-gauche">
+                                        <ul>
+                                        <li>Île-de-France</li>
+                                        <li>4-7 ans</li>
+                                        <li>Déplacement : non</li>
+                                        </ul>
+                                    </div>
+                                    <div class="unique-droite">
+                                        <img src="images/manette.png">
+                                        <p>Console et jeux vidéo</p>
+                                    </div>
+                                    <p>Posté par Julie</p>
+                                    <a href="#" class="btn btn-md btn-success"><span class="glyphicon glyphicon-envelope"></span> Envoyer un message</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="unique">
+                                    <h3>Recherche dons</h3>
+                                    <div class="unique-gauche">
+                                        <ul>
+                                        <li>Île-de-France</li>
+                                        <li>4-7 ans</li>
+                                        <li>Déplacement : Oui</li>
+                                        </ul>
+                                    </div>
+                                    <div class="unique-droite">
+                                        <img src="images/cube.png">
+                                        <p>Jeux ludo-éducatifs</p>
+                                    </div>
+                                    <p>Posté par Julie</p>
+                                    <a href="#" class="btn btn-md btn-success"><span class="glyphicon glyphicon-envelope"></span> Envoyer un message</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="unique">
+                                    <h3>Recherche dons</h3>
+                                    <div class="unique-gauche">
+                                        <ul>
+                                        <li>Île-de-France</li>
+                                        <li>4-7 ans</li>
+                                        <li>Déplacement : Oui</li>
+                                        </ul>
+                                    </div>
+                                    <div class="unique-droite">
+                                        <img src="images/cube.png">
+                                        <p>Jeux ludo-éducatifs</p>
+                                    </div>
+                                    <p>Posté par Julie</p>
+                                    <a href="#" class="btn btn-md btn-success"><span class="glyphicon glyphicon-envelope"></span> Envoyer un message</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center" id="page_navigation"></div>
+                    </article>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <article class="recherche">
+                                <h1>Recherche avancée</h1>
+                                <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" for="age">Âge</label>
+                                    <div class="col-md-8">
+                                        <select id="age" name="age" class="form-control">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" for="categorie">Catégorie</label>
+                                    <div class="col-md-8">
+                                        <select id="categorie" name="categorie" class="form-control">
+                                            <option value="aucun">Aucun</option>
+                                            <option value="console">Console</option>
+                                            <option value="peluche">Peluche</option>
+                                            <option value="poupee">Poupée</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" for="region">Région</label>
+                                    <div class="col-md-8">
+                                        <select id="region" name="region" class="form-control">
+                                            <option value="Aucun">Aucun</option>
+                                            <option value="alsace">Alsace</option>
+                                            <option value="iledefrance">Ile de France</option>
+                                            <option value="aquitaine">Aquitaine</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="text-center"><button class="btn btn-lg btn-success">Rechercher</button></div>
+                                </form>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article>
+                                <center>
+                                    <h1 style="font-size:16px;margin-top:0px;">Par région</h1>
+                                    <img src="images/carte-page.png" style="width:100%;max-width:321px;">
+                                </center>
+                            </article>
+                        </div>
+                    </div>
+
+
+                    <article class="deux">
+                        <h1>Résultat de la recherche</h1>
+                        <div id="content-donner" class="row">
+                            <div class="col-md-12">
+                                <div class="unique">
+                                    <h3>Monopoly</h3>
+                                    <div class="unique-gauche-page">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        <ul>
+                                        <li>Île-de-France</li>
+                                        <li>4-7 ans</li>
+                                        <li>Déplacement : non</li>
+                                        </ul>
+                                    </div>
+                                    <div class="unique-droite-page">
+                                        <img src="images/imagedefault.jpg">
+                                        <p>Console et jeux vidéo</p>
+                                        <p class="reseaux_sociaux">
+                                            <a href="#"><img class="img-circle" src="images/social1.jpg"></a>
+                                            <a href="#"><img class="img-circle" src="images/social2.jpg"></a>
+                                        </p>
+                                    </div>
+                                    <p>Posté par Julie le 26 juillet 1994 à 21:30</p>
+                                    <a href="#" class="btn btn-md btn-success"><span class="glyphicon glyphicon-envelope"></span> Envoyer un message</a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="unique">
+                                    <h3>Monopoly</h3>
+                                    <div class="unique-gauche-page">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        <ul>
+                                        <li>Île-de-France</li>
+                                        <li>4-7 ans</li>
+                                        <li>Déplacement : non</li>
+                                        </ul>
+                                    </div>
+                                    <div class="unique-droite-page">
+                                        <img src="images/imagedefault.jpg">
+                                        <p>Console et jeux vidéo</p>
+                                        <p class="reseaux_sociaux">
+                                            <a href="#"><img class="img-circle" src="images/social1.jpg"></a>
+                                            <a href="#"><img class="img-circle" src="images/social2.jpg"></a>
+                                        </p>
+                                    </div>
+                                    <p>Posté par Julie le 26 juillet 1994 à 21:30</p>
+                                    <a href="#" class="btn btn-md btn-success"><span class="glyphicon glyphicon-envelope"></span> Envoyer un message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+<!-- TEMOIGNAGE -->
+
+        <div class="container-fluid temoignage">
+            <div class="row transparent_noir"></div>
+            <div class="container">
+                <div class="row">
+                    <h1>Témoignages</h1>
+                    <div class="col-md-4">
+                        <div class="temoignage-photo">
+                        <img class="img-circle" src="images/profil1.jpg">
+                        </div>
+                        <blockquote class="quote-box">
+                            <p class="quotation-mark">
+                                “
+                            </p>
+                            <p class="quote-text">
+                                Au bon retour du Père Noel Sourd ! Les petits comme les grands nous t 'attendons impatiemment et remercions immensément toutes votre générosité et ambitions pour nous laisser nous faire conter par vos petits lutins. BONNE CONTINUATION !
+                            </p>
+                            <hr>
+                            <div class="blog-post-actions">
+                                <p class="blog-post-bottom pull-left">
+                                Maurice Duhayer
+                                </p>
+                                <p class="blog-post-bottom pull-right">
+                                <span class="badge quote-badge">896</span>  ❤
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="temoignage-photo">
+                            <img class="img-circle" src="images/profil2.jpg">
+                        </div>
+                        <blockquote class="quote-box">
+                            <p class="quotation-mark">
+                                “
+                            </p>
+                            <p class="quote-text">
+                                Par ce que je suis persuadée qu'en matière d'éducation et de culture le rêve et le plaisir sont très importants.
+                            </p>
+                            <hr>
+                            <div class="blog-post-actions">
+                                <p class="blog-post-bottom pull-left">
+                                Sandra Torres-Restoul
+                                </p>
+                                <p class="blog-post-bottom pull-right">
+                                <span class="badge quote-badge">896</span>  ❤
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="temoignage-photo">
+                            <img class="img-circle" src="images/profil3.jpg">
+                        </div>
+                        <blockquote class="quote-box">
+                            <p class="quotation-mark">
+                                “
+                            </p>
+                            <p class="quote-text">
+                                Merci beaucoup à votre site, j'ai pu donner des jouets en bon état à une association pour enfants autistes. Écologique et solidaire...qui dit mieux !
+                            </p>
+                            <hr>
+                            <div class="blog-post-actions">
+                                <p class="blog-post-bottom pull-left">
+                                Marion James
+                                </p>
+                                <p class="blog-post-bottom pull-right">
+                                <span class="badge quote-badge">896</span>  ❤
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- FOOTER -->
+
+        <footer class="container-fluid">
+            <div class="row">
+                <p>
+                    Recherche bénévole | FAQ | La charte | Partenaires | Remerciements | Règles et conditions d’utilisation | Contactez-nous | Newsletter
+                </p>
+            </div>
+        </footer>
+
+<!-- FENetRE -->
+<div class="modal fade" id="perso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img id="img_logo" src="images/logo.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Taper votre mot de passe et username.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Se souvenir
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-info btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Mot de passe oublié?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">S'enregistrer</button>
+                            </div>
+				        </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Register Form -->
+
+                </div>
+                <!-- End # DIV Form -->
+
+			</div>
+		</div>
+	</div>
+    <!-- END # MODAL LOGIN -->
+
+<!-- JAVASCRIPT FENETRE -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+  var show_per_page = 3;
+  var current_page = 0;
+
+  function set_display(first, last) {
+    $('#content').children().css('display', 'none');
+    $('#content').children().slice(first, last).css('display', 'block');
+  }
+
+  function previous(){
+      if($('.active').prev('.page_link').length) go_to_page(current_page - 1);
+  }
+
+  function next(){
+      if($('.active').next('.page_link').length) go_to_page(current_page + 1);
+  }
+
+  function go_to_page(page_num){
+    current_page = page_num;
+    start_from = current_page * show_per_page;
+    end_on = start_from + show_per_page;
+    set_display(start_from, end_on);
+    $('.active').removeClass('active');
+    $('#id' + page_num).addClass('active');
+  }
+
+  $(document).ready(function() {
+
+    var number_of_pages = Math.ceil($('#content').children().size() / show_per_page);
+
+    var nav = '<ul class="pagination"><li><a href="javascript:previous();">&laquo;</a>';
+
+    var i = -1;
+    while(number_of_pages > ++i){
+      nav += '<li class="page_link'
+      if(!i) nav += ' active';
+      nav += '" id="id' + i +'">';
+      nav += '<a href="javascript:go_to_page(' + i +')">'+ (i + 1) +'</a>';
+    }
+    nav += '<li><a href="javascript:next();">&raquo;</a></ul>';
+
+    $('#page_navigation').html(nav);
+    set_display(0, show_per_page);
+
+  });
+
+</script>
+
+<!-- JAVASCRIPT PARALLAXE -->
+
+<script type="text/javascript" src="script/jquery.parallax-1.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('header').parallax("center", 0, 0.1, true);
+        $('.temoignage').parallax("center", 4500, 0.1, true);
+    })
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a[href="#navbar-more-show"], .navbar-more-overlay').on('click', function(event) {
+        event.preventDefault();
+        $('body').toggleClass('navbar-more-show');
+        if ($('body').hasClass('navbar-more-show'))	{
+            $('a[href="#navbar-more-show"]').closest('li').addClass('active');
+        }else{
+            $('a[href="#navbar-more-show"]').closest('li').removeClass('active');
+        }
+        return false;
+    });
+});
+</script>
+
+<!-- JAVASCRIPT FENETRE -->
+<script type="text/javascript">
+$(function() {
+
+    var $formLogin = $('#login-form');
+    var $formLost = $('#lost-form');
+    var $formRegister = $('#register-form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+
+    $("form").submit(function () {
+        switch(this.id) {
+            case "login-form":
+                var $lg_username=$('#login_username').val();
+                var $lg_password=$('#login_password').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                }
+                return false;
+                break;
+            case "lost-form":
+                var $ls_email=$('#lost_email').val();
+                if ($ls_email == "ERROR") {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                } else {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                }
+                return false;
+                break;
+            case "register-form":
+                var $rg_username=$('#register_username').val();
+                var $rg_email=$('#register_email').val();
+                var $rg_password=$('#register_password').val();
+                if ($rg_username == "ERROR") {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                } else {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                }
+                return false;
+                break;
+            default:
+                return false;
+        }
+        return false;
+    });
+
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
+    }
+
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+  		}, $msgShowTime);
+    }
+});
+</script>
+
+    </body>
+</html>
