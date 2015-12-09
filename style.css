@@ -6,14 +6,8 @@
 
 header{
 
-    background: url(images/image1.jpg) center 0 no-repeat fixed;
+    background: url(images/image5.jpg) center 0 no-repeat fixed;
     padding-top:50px;
-}
-
-.fond_contenu{
-    background: url(images/image1.jpg) center 0 no-repeat fixed;
-    padding-top:15px;
-    padding-bottom:15px;
 }
 
 header h2{
@@ -49,13 +43,8 @@ header h2{
     text-align:justify;
 }
 
-.actions_description{
-    width:800px;
-    margin:auto;
-}
-
 .chercher{
-    margin:auto;
+    margin-left:auto;
     background-image:url(images/cherche.jpg);
     width:350px;
     height:150px;
@@ -65,20 +54,58 @@ header h2{
 .chercher_align{
     display:block;
     padding-left:200px;
-    padding-top:60px;
+    padding-top:80px;
 }
 
 .donner_align{
     display:block;
     padding-left:200px;
-    padding-top:60px;
+    padding-top:80px;
 }
 
 .donner{
-    margin:auto;
     background-image:url(images/donner.jpg);
     width:350px;
     height:150px;
+}
+
+.page_cherche{
+    background-color:#5bc0de;
+    width:100%;
+    text-align:center;
+}
+
+.page_cherche img{
+    margin-bottom:1px;
+    width:250px;
+    height:107px;
+    -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+        transition: all 1s ease;
+}
+
+.page_cherche img:hover{
+    width: 350px;
+    height: 150px;
+}
+
+.page_donner{
+    background-color:#5bc0de;
+    width:100%;
+    text-align:center;
+}
+
+.slogan{
+    background-image:url(images/transparent_noir.png);
+    padding:40px;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.slogan h2 {
+    font-size:20px;
 }
 
 .scroll{
@@ -105,11 +132,11 @@ header h2{
 
 .droite{
     margin-bottom:20px;
-    margin-top:40px;
+    margin-top:30px;
     background-color:#5bc0de;
     padding:15px;
+    border-radius:5px;
     color:#FFF;
-    border-radius:15px;
 }
 
 .droite h1{
@@ -135,7 +162,7 @@ header h2{
 }
 
 .temoignage{
-    background: url(images/image2.jpg) center 0 no-repeat fixed;
+    background: url(images/image6.jpg) center 0 no-repeat fixed;
     min-height:500px;
     color:#FFF;
 }
@@ -176,11 +203,9 @@ header h2{
 }
 
 .unique{
-    border-top:1px solid #FFF;
-    border-left:2px solid #FFF;
-    border-radius:15px;
+    background-color:#282828;
     padding:10px;
-    margin-bottom:10px;
+    margin-bottom:20px;
 }
 
 .unique-gauche{
@@ -508,7 +533,6 @@ blockquote{
   background: transparent;
   color: #555555;
   padding: 7px 0;
-  font-weight: bold;
   height:auto;
 }
 .login-form-1 .form-control::-webkit-input-placeholder {
